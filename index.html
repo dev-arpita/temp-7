@@ -6,9 +6,37 @@
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Infurnish</title>
+    <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+@keyframes topDown {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    .fade-in {
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+    .top-down {
+      animation: topDown 1s ease-out forwards;
+    }
+  </style>
 </head>
 <body>
-    <header>
+    <header class="fixed right-0 left-0 top-0 bg-white shadow-md z-50">
         <div class="flex flex-row justify-between items-center p-4 border-b border-gray-300">
             <div class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-280h60v-60h440v60h60v-154q0-21-8-39.5T730-506v-94q0-33-23.5-56.5T650-680H520q-11 0-21 3t-19 9q-9-6-19-9t-21-3H310q-33 0-56.5 23.5T230-600v94q-14 14-22 32.5t-8 39.5v154Zm60-120v-40q0-17 11.5-28.5T300-480h360q17 0 28.5 11.5T700-440v40H260Zm30-140v-80h160v80H290Zm220 0v-80h160v80H510ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0 0v-640 640Z"/></svg>
@@ -29,20 +57,20 @@
         </div>
     </header>
     <main>
-        <section class="">
+        <section class=" mt-18">
             <div class="p-8 flex flex-wrap justify-between gap-4 items-center bg-gray-100">
-                <h1 class="font-bold text-gray-700 text-2xl md:text-3xl lg:text-4xl">Creating home that <br> reflects Who You Are</h1>
+                <h1 class="font-bold text-gray-700 text-2xl md:text-3xl lg:text-4xl top-down">Creating home that <br> reflects Who You Are</h1>
                 <p class="md:text-sm mt-4 md:mt-0 text-xs ">From vision to reality, we craft homes that <br> mirror your personality</p>
             </div>
             <!-- banner -->
-             <div class="w-full bg-gray-300 overflow-hidden">
-                <img src="/home-1.jpg" alt="decorated with with beautiful plants and furnitures" class="w-full object-cover h-full lg:h-[70vh] object-bottom">
+             <div class="w-full bg-gray-300 overflow-hidden translate-x-0">
+                <img src="/home-1.jpg" alt="decorated with with beautiful plants and furnitures" class="w-full object-cover h-full lg:h-[70vh] object-bottom opacity-0 fade-in">
              </div>
              <div class="grid grid-row-1 lg:grid-cols-2 gap-8 mt-8 px-8">
-                <div class="block md:grid md:grid-cols-2 lg:block w-full  gap-4">
-                    <img class="w-full h-[55vh] lg:w-full object-cover object-center" src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="block md:grid md:grid-cols-2 lg:block w-full  gap-6">
+                    <img class="w-full h-[55vh] lg:w-full object-cover object-center transition-all duration-500 hover:scale-105 rounded-md" src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                     <!-- below img only appear in md screens -->
-                    <img class="h-[55vh] hidden md:block lg:w-0 md:w-full lg:w-0" src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img class="h-[55vh] hidden md:block lg:w-0 md:w-full lg:w-0 transition-all duration-500 hover:scale-105 rounded-md" src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                 </div>
                 <div class="flex flex-col gap-8 mt-6 md:mt-6 sm:mt-0">
                     <h2 class="text-lg sm:text-xl lg:text-3xl md:text-2xl font-semibold">Our thought towards <br class=" md:hidden lg:block">Thoughtful Living</h2>
@@ -53,25 +81,25 @@
         <div class="lg:mt-[-360px] bg-gray-100">
             <section class="lg:max-w-5xl lg:mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 mb-16 p-4 md:px-8">
                 <div class="">
-                    <span class="md:hidden fa-solid fa-couch text-3xl text-gray-600"></span>
+                    <span class="md:hidden fa-solid fa-couch text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                     <p class="flex items-center text-xl md:text-2xl lg:text-3xl">500 <span class="text-2xl">+</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-md">Created Furniture</p>
                 </div>
                 <div class="">
-                    <span class="md:hidden fa-regular fa-face-grin-beam text-3xl text-gray-600"></span>
+                    <span class="md:hidden fa-regular fa-face-grin-beam text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                     <p class="flex items-center text-xl md:text-2xl lg:text-3xl">20K <span class="text-2xl">+</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-md ">Happy Customers Worldwide</p>
                 </div>
                 <div class="">
-                    <span class="md:hidden fa-solid fa-star text-3xl text-gray-600"></span>
+                    <span class="md:hidden fa-solid fa-star text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                     <p class="text-xl md:text-2xl lg:text-3xl text-gray-800">4.8/<span class="text-gray-500 text-xs lg:text-sm">5</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-md">Average Customer Rating</p>
                 </div>
                 <div class="">
-                    <span class="md:hidden fa-solid fa-pen-ruler text-3xl text-gray-600"></span>
+                    <span class="md:hidden fa-solid fa-pen-ruler text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                     <p class="text-xl md:text-2xl lg:text-3xl">7+ <span class="text-gray-500 text-xs lg:text-sm">years</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-sm md:text-base lg:text-md">of Home Designing Expertise</p>
@@ -82,13 +110,13 @@
             <div class="p-8 flex flex-col justify-between gap-4 items-center bg-gray-100">
                 <div class="flex gap-4 items-center">
                     <h2 class="font-bold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Meet the people behind <span class="">Infurnish</span></h2>
-                    <span class="fa-solid fa-people-group text-3xl text-gray-600"></span>
+                    <span class="fa-solid fa-people-group text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                 </div>
             <p class="md:text-sm">Our dedicated team of designers and craftsmen</p>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8">
-                <img class="h-30 md:h-50 lg:h-70 rounded-lg" src="/avatar1.jpg" alt="">
-                <img class="h-30 md:h-50 lg:h-70 rounded-lg" src="/avatar2.jpg" alt="">
-                <img class="h-30 md:h-50 lg:h-70 rounded-lg" src="/avatar3.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar1.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar2.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar3.jpg" alt="">
             </div>
         </section>
     </main>
