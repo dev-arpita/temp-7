@@ -5,35 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Infurnish</title>
-    <style>
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateX(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-@keyframes topDown {
-    from{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-    .fade-in {
-      animation: fadeIn 1.2s ease-out forwards;
-    }
-    .top-down {
-      animation: topDown 1s ease-out forwards;
-    }
-  </style>
+
 </head>
 <body>
     <header class="fixed right-0 left-0 top-0 bg-white shadow-md z-50">
@@ -81,26 +55,26 @@
         <div class="lg:mt-[-360px] bg-gray-100">
             <section class="lg:max-w-5xl lg:mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 mb-16 p-4 md:px-8">
                 <div class="">
-                    <span class="md:hidden fa-solid fa-couch text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
-                    <p class="flex items-center text-xl md:text-2xl lg:text-3xl">500 <span class="text-2xl">+</span></p>
+                    <span class="mb-2 md:hidden fa-solid fa-couch text-2xl text-slate-400 transition-all duration-500 hover:scale-105 rounded-md"></span>
+                    <p class="flex items-center text-gray-700 text-xl md:text-2xl lg:text-3xl">500 <span class="text-2xl">+</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-md">Created Furniture</p>
                 </div>
                 <div class="">
-                    <span class="md:hidden fa-regular fa-face-grin-beam text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
-                    <p class="flex items-center text-xl md:text-2xl lg:text-3xl">20K <span class="text-2xl">+</span></p>
+                    <span class="mb-2 md:hidden fa-regular fa-face-grin-beam text-2xl text-slate-400 transition-all duration-500 hover:scale-105 rounded-md"></span>
+                    <p class="flex items-center text-gray-700 text-xl md:text-2xl lg:text-3xl">20K <span class="text-2xl">+</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-md ">Happy Customers Worldwide</p>
                 </div>
                 <div class="">
-                    <span class="md:hidden fa-solid fa-star text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
-                    <p class="text-xl md:text-2xl lg:text-3xl text-gray-800">4.8/<span class="text-gray-500 text-xs lg:text-sm">5</span></p>
+                    <span class="mb-2 md:hidden fa-solid fa-star text-2xl text-slate-400 transition-all duration-500 hover:scale-105 rounded-md"></span>
+                    <p class="text-xl md:text-2xl text-gray-700 lg:text-3xl ">4.8/<span class="text-gray-500 text-xs lg:text-sm">5</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-md">Average Customer Rating</p>
                 </div>
                 <div class="">
-                    <span class="md:hidden fa-solid fa-pen-ruler text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
-                    <p class="text-xl md:text-2xl lg:text-3xl">7+ <span class="text-gray-500 text-xs lg:text-sm">years</span></p>
+                    <span class="mb-2 md:hidden fa-solid fa-pen-ruler text-2xl text-slate-400 transition-all duration-500 hover:scale-105 rounded-md"></span>
+                    <p class="text-xl text-gray-700 md:text-2xl lg:text-3xl">7+ <span class="text-gray-500 text-xs lg:text-sm">years</span></p>
                     <div class="bg-gray-300 w-[16vw] h-[2px] my-3 "></div>
                     <p class="hidden md:block text-gray-400 text-sm md:text-base lg:text-md">of Home Designing Expertise</p>
                 </div>
@@ -113,10 +87,13 @@
                     <span class="fa-solid fa-people-group text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                 </div>
             <p class="md:text-sm">Our dedicated team of designers and craftsmen</p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8">
-                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar1.jpg" alt="">
-                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar2.jpg" alt="">
-                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar3.jpg" alt="">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8 overflow-hidden snap-x">
+                <img class="snap-center h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar1.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar2.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar3.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar-4.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar-5.jpg" alt="">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar-6.jpg" alt="">
             </div>
         </section>
     </main>
@@ -153,10 +130,10 @@
                 <!-- follow us -->
         
                     <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-bold font-md">Follow Us</p>
-                        <p class="text-gray-400 text-sm">Instagram</p>
-                        <p class="text-gray-400 text-sm">Facebook</p>
-                        <p class="text-gray-400 text-sm">Twitter</p>
+                        <p class="font-semibold md:font-sm lg:font-md">Follow Us</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Instagram</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Facebook</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Twitter</p>
                     </div>
             </div>
             <div class="flex flex-col max-w-lg items-center justify-start">
