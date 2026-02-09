@@ -14,7 +14,7 @@
         <div class="flex flex-row justify-between items-center p-4 border-b border-gray-300">
             <div class="flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M200-280h60v-60h440v60h60v-154q0-21-8-39.5T730-506v-94q0-33-23.5-56.5T650-680H520q-11 0-21 3t-19 9q-9-6-19-9t-21-3H310q-33 0-56.5 23.5T230-600v94q-14 14-22 32.5t-8 39.5v154Zm60-120v-40q0-17 11.5-28.5T300-480h360q17 0 28.5 11.5T700-440v40H260Zm30-140v-80h160v80H290Zm220 0v-80h160v80H510ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0 0v-640 640Z"/></svg>
-                <div class="logo">INFURNISH</div>
+                <div class="logo font-bold">INFURNISH</div>
             </div>
             <div class="hidden md:flex gap-4 ">
                 <div class=" hover:border-b hover:border-gray-200"><a href="#">Home</a></div>
@@ -80,15 +80,16 @@
                 </div>
             </section>
         </div>
+        <!-- team -->
         <section class="">
             <div class="p-8 flex flex-col justify-between gap-4 items-center bg-gray-100">
                 <div class="flex gap-4 items-center">
                     <h2 class="font-bold text-gray-800 text-2xl md:text-3xl lg:text-4xl">Meet the people behind <span class="">Infurnish</span></h2>
                     <span class="fa-solid fa-people-group text-3xl text-gray-600 transition-all duration-500 hover:scale-105 rounded-md"></span>
                 </div>
-            <p class="md:text-sm">Our dedicated team of designers and craftsmen</p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8 overflow-hidden snap-x">
-                <img class="snap-center h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar1.jpg" alt="">
+            <p class="text-sm md:text-lg">Our dedicated team of designers and craftsmen</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8 overflow-hidden snap-x justify-center align-center">
+                <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105" src="/avatar1.jpg" alt="">
                 <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar2.jpg" alt="">
                 <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar3.jpg" alt="">
                 <img class="h-30 md:h-50 lg:h-70 rounded-lg transition-all duration-500 hover:scale-105 " src="/avatar-4.jpg" alt="">
@@ -98,39 +99,43 @@
         </section>
     </main>
     <footer class="bg-gray-950 text-white mt-16 ">
-        <div class="flex flex-col md:flex-row justify-between gap-8 p-8 lg:px-10 py-12">
+        <div class="flex sm:hidden items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#fff"><path d="M200-280h60v-60h440v60h60v-154q0-21-8-39.5T730-506v-94q0-33-23.5-56.5T650-680H520q-11 0-21 3t-19 9q-9-6-19-9t-21-3H310q-33 0-56.5 23.5T230-600v94q-14 14-22 32.5t-8 39.5v154Zm60-120v-40q0-17 11.5-28.5T300-480h360q17 0 28.5 11.5T700-440v40H260Zm30-140v-80h160v80H290Zm220 0v-80h160v80H510ZM160-80q-33 0-56.5-23.5T80-160v-640q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v640q0 33-23.5 56.5T800-80H160Zm0-80h640v-640H160v640Zm0 0v-640 640Z"/></svg>
+                <div class="logo font-bold text-2xl">INFURNISH</div>
+            </div>
+        <div class="flex flex-col items-center md:flex-row justify-between gap-8 p-2 sm:p-8 lg:px-10 lg:py-12">
             <!-- shop -->
-            <div class="flex gap-12 grow-7 lg:mr-10">
+            <div class="hidden sm:flex gap-8 sm:gap-12 grow-7 lg:mr-10">
         
                     <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-bold font-md">Shop</p>
-                        <p class="text-gray-400 text-sm">Living Room</p>
-                        <p class="text-gray-400 text-sm">Dinning Room</p>
-                        <p class="text-gray-400 text-sm">Drawing Room</p>
+                        <p class="font-bold text-[14px]font-md">Shop</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Living Room</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Dinning Room</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Drawing Room</p>
                     </div>
                 
                 <!-- Info -->
         
                     <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-bold font-md">Info</p>
-                        <p class="text-gray-400 text-sm">About Us</p>
-                        <p class="text-gray-400 text-sm">FAQs</p>
-                        <p class="text-gray-400 text-sm">Brand Values</p>
+                        <p class="font-bold text-[14px] font-md">Info</p>
+                        <p class="text-gray-400 text-xs md:text-sm">About Us</p>
+                        <p class="text-gray-400 text-xs md:text-sm">FAQs</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Brand Values</p>
                     </div>
                 
                 <!-- help -->
         
                     <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-bold font-md">Help</p>
-                        <p class="text-gray-400 text-sm">Contact</p>
-                        <p class="text-gray-400 text-sm">Track Order</p>
-                        <p class="text-gray-400 text-sm">Warrenty</p>
+                        <p class="font-bold text-[14px] md:font-md">Help</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Contact</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Track Order</p>
+                        <p class="text-gray-400 text-xs md:text-sm">Warrenty</p>
                     </div>
                 
                 <!-- follow us -->
         
                     <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-semibold md:font-sm lg:font-md">Follow Us</p>
+                        <p class="font-semibold text-[14px] md:font-sm lg:font-md">Follow Us</p>
                         <p class="text-gray-400 text-xs md:text-sm">Instagram</p>
                         <p class="text-gray-400 text-xs md:text-sm">Facebook</p>
                         <p class="text-gray-400 text-xs md:text-sm">Twitter</p>
@@ -139,25 +144,25 @@
             <div class="flex flex-col max-w-lg items-center justify-start">
                 <div class="flex flex-col gap-4">
                     <p class="font-bold text-md text-start self-center">Join the Infurnish Community</p>
-                    <p class="text-sm text-gray-400 w-2/3 mt-2 self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odit sint rem vel voluptatem perferendis!</p>
+                    <p class="text-xs w-3/4 md:text-sm text-gray-400 sm:w-2/3 mt-2 self-center pl-2 sm:pl-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odit sint rem vel voluptatem perferendis!</p>
                 </div>
                 <div class="flex gap-4 mt-8">
                     <label class="hidden" for="email" aria-label="email">Email</label>
                     <input class="border-b border-gray-200 border-dotted" type="email" name="email" id="email" placeholder="Email">
-                    <button class="py-1 lg:py-2 px-2 lg:px-4 text-sm lg:text-base rounded-md font-bold bg-white text-gray-700">Subscribe</button>
+                    <button class="py-1 lg:py-2 px-2 lg:px-4 text-xs sm:text-sm lg:text-base rounded-md font-bold bg-white text-gray-700">Subscribe</button>
                 </div>
             </div>
         </div>
         <div class="h-[1px] bg-white"></div>
-        <div class="flex justify-between items-center px-4 lg:px-10">
+        <div class="flex flex-col md:flex-row md:justify-between items-center px-4 lg:px-10">
             <!-- social links icon -->
-             <div class="flex justify-around w-1/4 lg:w-1/6 p-4">
-                <span class="fa-brands fa-facebook-f text-gray-400 text-sm p-4 mx-auto"></span>
-                <span class="fa-brands fa-twitter text-gray-400 text-sm p-4 mx-auto"></span>
-                <span class="fa-brands fa-instagram text-gray-400 text-sm p-4 mx-auto"></span>
-                <span class="fa-brands fa-linkedin-in text-gray-400 text-sm p-4 mx-auto"></span>
-             </div>
-            <p class="text-gray-400 text-sm p-4 ">© 2024 Infurnish. All rights reserved.</p>
+            <div class="flex justify-around w-1/2 md:w-1/4 lg:w-1/6 p-2 md:p-4">
+            <span class="fa-brands fa-facebook-f text-gray-400 text-sm p-4 mx-auto"></span>
+            <span class="fa-brands fa-twitter text-gray-400 text-sm p-4 mx-auto"></span>
+            <span class="fa-brands fa-instagram text-gray-400 text-sm p-4 mx-auto"></span>
+            <span class="fa-brands fa-linkedin-in text-gray-400 text-sm p-4 mx-auto"></span>
+            </div>
+            <p class="text-gray-400 text-sm p-2 md:p-4 ">© 2024 Infurnish. All rights reserved.</p>
         </div>
     </footer>
 </body>
