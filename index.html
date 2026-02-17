@@ -126,19 +126,27 @@
                 <!-- help -->
         
                     <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-bold text-[14px] md:font-md">Help</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Contact</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Track Order</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Warrenty</p>
+                        <p class="dropdown-btn font-bold text-[14px] md:font-md">Help</p>
+                        <div class="dropdown-menu flex flex-col gap-2 items-start pl-1 md:pl-0 transition-all">
+                            <p class="text-gray-400 text-xs md:text-sm">Contact</p>
+                            <p class="text-gray-400 text-xs md:text-sm">Track Order</p>
+                            <p class="text-gray-400 text-xs md:text-sm">Warrenty</p>
+                        </div>
                     </div>
                 
                 <!-- follow us -->
         
-                    <div class="flex flex-col gap-4 items-start ">
-                        <p class="font-semibold text-[14px] md:font-sm lg:font-md">Follow Us</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Instagram</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Facebook</p>
-                        <p class="text-gray-400 text-xs md:text-sm">Twitter</p>
+                    <div class="group flex flex-col gap-4 items-start">
+                        <div class="flex items-center gap-1 pr-2">
+                            <p class="font-semibold text-[14px] md:font-sm lg:font-md text-nowrap">Follow Us</p>
+                            <span class="dropdown-btn w-4 fa-solid fa-chevron-right font-bold text-[12px] md:invisible hover:cursor-pointer hover:rotate-90 transition-all "></span>
+                        </div>
+                        <!-- <div class="dropdown-menu hidden flex flex-col gap-2 items-start pl-2 md:pl-0 transition-all"> -->
+                            <div class="hidden group-hover:flex flex-col gap-2 pl-2">
+                            <p class="text-gray-400 text-xs md:text-sm">Instagram</p>
+                            <p class="text-gray-400 text-xs md:text-sm">Facebook</p>
+                            <p class="text-gray-400 text-xs md:text-sm">Twitter</p>
+                        </div>
                     </div>
             </div>
             <div class="flex flex-col max-w-lg items-center justify-start">
@@ -165,5 +173,6 @@
             <p class="text-gray-400 text-sm p-2 md:p-4 ">© 2024 Infurnish. All rights reserved.</p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
